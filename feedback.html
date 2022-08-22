@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Feedback Form</title>
+        <link rel="shortcut icon" href="images/fav-icon3.png"/>
+        <style>
+            body{
+                background-image: url(bg11.jpg);
+                background-size: cover;
+            }
+            .wrap{
+                width: 500px;
+                height: 600px;
+                background: #000;
+                color: #fff;
+                border: 3px solid #fff;
+                margin: 70px auto;
+                padding: 0px 30px;
+                border-radius: 20px;
+                top: 50%;
+                left: 50%;
+                
+            }
+            h1
+            {
+                font-size: 70px;
+                color: #fff;
+                text-align: center;
+                border-bottom: 2px solid white;
+            }
+            table
+            {
+                font-size: 25px;
+            }
+            td{
+                padding: 10px 0px 0px 0px;
+            }
+            .txt{
+                width: 200px;
+                height: 30px;
+                font-size: 20px;
+                border: none;
+                border-bottom: 1px solid #fff;
+                background: transparent;
+                outline: none;
+                color: #fff;
+            }
+            .txtarea{
+                border-radius: 8px;
+                border: 1px solid #fff;
+                background: transparent;
+                outline: none;
+                color: #fff;
+                font-size: 15px;
+            }
+            .avatar{
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+                position: absolute;
+                top: 10px;
+                left: calc(50% - 50px);
+            }
+            .bt a{
+                text-decoration: none;
+                color: #fff;
+            }
+            .bt{
+                text-align: center;
+                font-size: 25px;
+                margin-left: 180px;
+                cursor: pointer;
+                padding: 5px 20px;
+                border-radius: 20px;
+                background: #fb2525;
+                color: #fff;
+            }
+            .bt:hover{
+                background: #000;
+                border: 2px solid #fff;
+                color: #000;
+            }
+            .bt a:hover{
+                color: #fff;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="wrap">
+            <img src="feed.jpg" class="avatar">
+            <table>
+                <form action="" method="">
+                    <h1>Feedback form</h1>
+                    <tr>
+                        <td colspan="2">
+                            <label>How do you rate your overall experience?</label><br>
+                            <input type="radio" name="rate" value="bad">Bad
+                            <input type="radio" name="rate" value="average">Average
+                            <input type="radio" name="rate" value="Best">Best
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label>Fullname</label>
+                        <br>
+                        <input type="text" name="Fullanme" class="txt">
+                    </td>
+                    <td><label>Email*</label>
+                        <br>
+                        <input type="email" name="Email" class="txt">
+                    </td>
+                    </tr>
+                    <tr>
+                        <td><label>Age*</label>
+                        <br>
+                        <input type="text" name="age" class="txt">
+                    </td>
+                    <td><label>Phone*</label>
+                        <br>
+                        <input type="text" name="phone" class="txt">
+                    </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>Message</label><br>
+                            <textarea rows="5" cols="30" class="txtarea"></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><button type="submit" class="bt"><a href="index.html" >Submit</a></button></td>
+                    </tr>
+                </form>
+            </table>
+        </div>
+    </body>
+</html>

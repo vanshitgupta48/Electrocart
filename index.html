@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ElectroCart | Online Shopping</title>
+        <link rel="shortcut icon" href="images/fav-icon.png"/>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="footer.css">
+        <link rel="stylesheet" href="boxes.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <style>
+          .close{
+            display: none;
+          }
+          .search-cancel{
+    color: #fb2525;
+    font-size: 2rem;
+    padding-right: 40px;
+}
+          .srch{
+            position: fixed;
+            margin-left: 500px;
+            width: 300px;
+            height: 50px;
+            font-size: 20px;
+            padding: 10px;
+            z-index: 102;
+            display: none;
+          }
+          .search-bar-active{
+              display: flex;
+          }
+        </style>
+    </head>
+    <body>
+      <input type="text" placeholder="Search For Products" name="search1" class="srch">
+        <nav style="position: fixed;">
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+              <i class="fas fa-bars"></i>
+            </label>
+            <label class="logo"><img src="logo4.png"></label>
+            <ul>
+              <li><a class="active" href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="demo.html">Demo</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="feedback.html">Feedback</a></li>
+              <li ><div class="right-menu" id="icon">
+                <a  class="search" id="search">
+                    <i class="fas fa-search"></i>
+                </a>
+                <a href="login.html" class="user">
+                    <i class="far fa-user"></i>
+                </a>
+                <a href="#" class="cart">
+                    <i class="fas fa-shopping-cart ">
+                    </i>
+                </a>
+            </div></li>
+            </ul>
+          </nav>
+          <script>
+            $(document).on('click','.search1',function(){
+                  $('.srch').addClass('search-bar-active')
+            });
+            </script>
+        <div class="image1">
+                    <img src="images/c15.png" style="z-index: -1;">
+        </div>
+              <section class="services">
+            <div class="services-box">
+                <i class="fas fa-shipping-fast"></i>
+                <span>Free Shipping</span>
+                <p>Free Shipping on above Rs.500</p>
+            </div>
+            <div class="services-box">
+                <i class="fas fa-headphones-alt"></i>
+                <span>Support 24*7</span>
+                <p>We support you 24h a day</p>
+            </div>
+            <div class="services-box">
+                <i class="fas fa-sync"></i>
+                <span>100% Money Back</span>
+                <p>You have 5 days to Return</p>
+            </div>
+            
+        </section>
+        <section class="products">
+          <div class="boxes">
+            <div class="box1" id="iblock">
+              <h3>Best Sellers</h3>
+              <ol type="I">
+                <li>
+                  <p>Smartphones:</p>
+                  <ul type="disc"><li>SAMSUNG</li><li>Realme</li><li>iPhone</li><li>Xiaomi</li></ul>
+                </li>
+                <li>
+                  <p>LED TV:</p>
+                  <ul type="disc"><li>LG</li><li>Sony</li><li>Panasonic</li><li>SAMSUNG</li></ul>
+                </li>
+                <li>
+                  <p>Laptops:</p>
+                  <ul type="disc"><li>DELL</li><li>LENOVO</li><li>ACER</li><li>MacBook</li></ul>
+                </li>
+                <li>
+                <p>Washing Machines:</p>
+                  <ul type="disc"><li>IFB</li><li>Bosch</li><li>SAMSUNG</li><li>LG</li></ul>
+                </li>
+                <li>
+                <p>Headphones:</p>
+                  <ul type="disc"><li>Apple</li><li>boAt</li><li>Sony</li><li>JBL</li></ul>
+                </li>
+              </ol>
+            </div>
+            <div class="box2" id="iblock">
+            </div>
+          </div>
+          <div class="head"><h2>Our Latest Products</h2></div>
+          <div class="pd-box">
+          <div class="item">
+            <div class="image2"><img src="images/ph2.jpg"></div>
+            <div class="content">Apple iPhone 13 Pro Max (128GB) - Silver<br>⭐⭐⭐⭐⭐<br><span>M.R.P.: <del>₹1,29,900.00</del></span><br><span class="spn">Deal of the day: ₹1,15,900</span><br><br><a onclick="func1()">Add to Cart</a><a href="payment.html">Buy Now</a></div>
+          </div>
+          <div class="item">
+            <div class="image2"><img src="images/ws1.png"></div>
+            <div class="content">Samsung 8 Kg Fully-Automatic Front Loading Washing Machine<br>⭐⭐⭐⭐ ✰<br><span>M.R.P.: <del>₹51,800.00</del></span><br><span class="spn">Deal of the day: ₹35,990.00</span><br><br><a onclick="func1()">Add to Cart</a><a href="payment.html">Buy Now</a></div>
+          </div>
+          <div class="item">
+            <div class="image2"><img src="images/sm.jpg"></div>
+            <div class="content">Apple Watch Space Grey Aluminium Case with Midnight Sport Band-Regular<br>⭐⭐⭐ ✰ ✰<br><span>M.R.P.: <del>₹29,900.00</del></span><br><span class="spn">Deal of the day: ₹26,989</span><br><br><a onclick="func1()">Add to Cart</a><a href="payment.html">Buy Now</a></div>
+          </div>
+          <div class="item">
+            <div class="image2"><img src="images/tb.jpg"></div>
+            <div class="content">Samsung Galaxy Tab S7 26.31 cm (10.4 inch), 4 GB RAM, 64 GB ROM<br>⭐⭐⭐ ✰ ✰<br><span>M.R.P.: <del>₹30,999.00</del></span><br><span class="spn">Deal of the day: ₹25,499</span><br><br><a onclick="func1()">Add to Cart</a><a href="payment.html">Buy Now</a></div>
+          </div>
+          </div>
+          <div class="pd-box">
+            <div class="item">
+              <div class="image2"><img src="images/lp.jpeg"></div>
+              <div class="content">Dell Inspiron 3521 Laptop, 8Gb GDDR4, 256Gb SSD, 15.6" <br>⭐⭐⭐⭐⭐<br><span>M.R.P.: <del>₹43,494.00</del></span><br><span class="spn">Deal of the day: ₹32,790</span><br><br><a onclick="func1()">Add to Cart</a><a href="payment.html">Buy Now</a></div>
+            </div>
+            <div class="item">
+              <div class="image2"><img src="images/rf.jpg"></div>
+              <div class="content">Samsung 253L 3 Star Inverter Frost Free Double Door Refrigerator<br>⭐⭐⭐⭐ ✰<br><span>M.R.P.: <del>₹31,900.00</del></span><br><span class="spn">Deal of the day: ₹25,900</span><br><br><a onclick="func1()">Add to Cart</a><a href="payment.html">Buy Now</a></div>
+            </div>
+            <div class="item">
+              <div class="image2"><img src="images/ph1.jpg"></div>
+              <div class="content">Samsung Galaxy M53 5G (Mystique Green, 6GB, 128GB Storage) | 108MP<br>⭐⭐⭐ ✰ ✰<br><span>M.R.P.: <del>₹32,999.00</del></span><br><span class="spn">Deal of the day: ₹24,900</span><br><br><a onclick="func1()">Add to Cart</a><a href="payment.html">Buy Now</a></div>
+            </div>
+            <div class="item">
+              <div class="image2"><img src="images/in.jpeg"></div>
+              <div class="content">Philips Viva Collection HD4928/01 2100-Watt Induction Cooktop <br>⭐⭐⭐ ✰ ✰<br><span>M.R.P.: <del>₹5,596.00</del></span><br><span class="spn">Deal of the day: ₹2,849</span><br><br><a onclick="func1()">Add to Cart</a><a href="payment.html">Buy Now</a></div>
+            </div>
+            </div>
+            <div class="close">
+            <div class="pd-box">
+              <div class="item">
+                <div class="image2"><img src="images/ov5.jpeg"></div>
+                <div class="content">Zebronics Zeb-Transformer-M Optical USB Gaming Mouse(Black)<br>⭐⭐⭐⭐⭐<br><span>M.R.P.: <del>₹549</del></span><br><span class="spn">Deal of the day: ₹349</span><br><br><a onclick="func1()">Add to Cart</a><a href="payment.html">Buy Now</a></div>
+                </div>
+              <div class="item">
+                <div class="image2"><img src="images/ov6.png"></div>
+                <div class="content">Epson EcoTank L6270 A4 Wi-Fi Duplex All-in-One Ink Tank Printer with ADF <br>⭐⭐⭐ ✰ ✰<br><span>M.R.P.: <del>₹27,999.00</del></span><br><span class="spn">Deal of the day: ₹24,998</span><br><br><a onclick="func1()">Add to Cart</a><a href="payment.html">Buy Now</a></div>
+              </div>
+              <div class="item">
+                <div class="image2"><img src="images/ov7.jpg"></div>
+                <div class="content">BESTOR® Portable LCD Writing Tablet 10 inches Paperless Memo Digital Tablet<br>⭐⭐⭐ ✰ ✰<br><span>M.R.P.: <del>₹5,596.00</del></span><br><span class="spn">Deal of the day: ₹2,849</span><br><br><a onclick="func1()">Add to Cart</a><a href="payment.html">Buy Now</a></div>
+              </div>
+              <div class="item">
+                <div class="image2"><img src="images/ov8.png"></div>
+                <div class="content">boAt Rockerz 450 Bluetooth On Ear Headphones Upto 15 Hours Playback<br>⭐⭐ ✰  ✰ ✰<br><span>M.R.P.: <del>₹3,990.00</del></span><br><span class="spn">Deal of the day: ₹898</span><br><br><a onclick="func1()">Add to Cart</a><a href="payment.html">Buy Now</a></div>
+              </div>
+              </div>
+            <div class="pd-box">
+              <div class="item">
+                <div class="image2"><img src="images/ov1.jpg"></div>
+                <div class="content">Philips HD6975/00 25 Litre Digital Oven Toaster Grill, Grey, 25 liter<br>⭐⭐⭐⭐⭐<br><span>M.R.P.: <del>₹8,995</del></span><br><span class="spn">Deal of the day: ₹7,125</span><br><br><a onclick="func1()">Add to Cart</a><a href="payment.html">Buy Now</a></div>
+              </div>
+              <div class="item">
+                <div class="image2"><img src="images/ov2.jpg"></div>
+                <div class="content">AmazonBasics 564 L Side-by-Side Door Refrigerator (Black Glass Door)<br>⭐⭐ ✰ ✰ ✰<br><span>M.R.P.: <del>₹83,999.00</del></span><br><span class="spn">Deal of the day: ₹51,999</span><br><br><a onclick="func1()">Add to Cart</a><a href="payment.html">Buy Now</a></div>
+              </div>
+              <div class="item">
+                <div class="image2"><img src="images/ov3.jpg"></div>
+                <div class="content">OnePlus Nord CE 2 5G (Bahamas Blue, 8GB RAM, 128GB Storage)<br>⭐⭐ ✰ ✰ ✰<br><span>M.R.P.: <del>₹31,997.00</del></span><br><span class="spn">Deal of the day: ₹24,999</span><br><br><a onclick="func1()">Add to Cart</a><a href="payment.html">Buy Now</a></div>
+              </div>
+              <div class="item">
+                <div class="image2"><img src="images/ov4.jpg"></div>
+                <div class="content">LG 7 Kg 5 Star Semi-Automatic Top Loading Washing Machine<br>⭐⭐⭐⭐ ✰<br><span>M.R.P.: <del>₹16,090.00</del></span><br><span class="spn">Deal of the day: ₹11,490</span><br><br><a onclick="func1()">Add to Cart</a><a href="payment.html">Buy Now</a></div>
+              </div>
+              </div>
+            </div>
+            <div >
+            <div class="view"><a onclick="myFunc()"><h2 id="myDIV">View More</h2></a></div>
+          </div>
+          <script>
+            function myFunc() {
+            var x = document.getElementById("myDIV");
+            if (x.innerHTML === "View More") {
+                 x.innerHTML = "View Less";
+            } else {
+                 x.innerHTML = "View More";
+            }
+        }
+        $(document).ready(function(){
+          $(".view").click(function(){
+            $(".close").toggle();
+          });
+        });
+        $(document).ready(function(){
+          $(".search").click(function(){
+            $(".srch").toggle();
+          });
+        });
+            function func1(){
+              alert("Your item has been added to the cart!!");
+            }
+          </script>
+        </section>
+        <img class="d-block w-100" src="images/c10.png" style="margin: 0px;width: 100%;" alt="First slide">
+        <img class="d-block w-100" src="images/c12.png" style="padding: 0px;width: 100%;" alt="First slide">
+        <section class="products">
+          <div class="head"><h2>Our Top Brands</h2></div>
+          <img class="d-block w-100" src="images/brand2.png" style="padding: 0px;width: 100%;" alt="First slide">
+        </section>
+        <section class="feed">
+          <a href="feedback.html" style="text-decoration: none;">👉Give your feedback here🔔!!!</a>
+        </section>
+          <img class="d-block w-100" src="images/c4.png" style="padding: 0px;width: 100%;" alt="First slide">
+        <footer id="footer">
+            <div class="main-content">
+              <div class="left box">
+                <h2>About us</h2>
+                <div class="content">
+                  <p>Electrocart is an online shopping website of electrical appliances where you can get things at good price of any company at good discounts.<span><a href="about.html">More</a></span></p>
+                  <div class="social">
+                    <a href="https://facebook.com"><span class="fab fa-facebook-f"></span></a>
+                    <a href="#"><span class="fab fa-twitter"></span></a>
+                    <a href="https://instagram.com"><span class="fab fa-instagram"></span></a>
+                    <a href="https://youtube.com"><span class="fab fa-youtube"></span></a>
+                  </div>
+                </div>
+              </div>
+              <div class="center box">
+                <h2>Address</h2>
+                <div class="content">
+                  <div class="place">
+                    <br><span class="fas fa-map-marker-alt"></span>
+                    <span class="text">Abcde, xyz</span>
+                  </div>
+                  <div class="phone">
+                    <span class="fas fa-phone-alt"></span>
+                    <span class="text">+123-12345678</span>
+                  </div>
+                  <div class="email">
+                    <span class="fas fa-envelope"></span>
+                    <span class="text">electrocart@gmail.com</span>
+                  </div>
+                </div>
+              </div>
+              <div class="right box">
+                <h2>Contact us</h2>
+                <div class="content">
+                  <form action="#">
+                    <div class="email">
+                      <div class="text">Email *</div>
+                      <input type="email" required>
+                    </div>
+                    <div class="msg">
+                      <div class="text">Message *</div>
+                      <textarea rows="2" cols="25" required></textarea>
+                    </div>
+                    <div class="btn">
+                      <button type="submit">Send</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <div class="bottom">
+              <center>
+                <span class="credit">Created By <a href="#">ElectroCart</a> | </span>
+                <span class="far fa-copyright"></span><span> 2022 All rights reserved.</span>
+              </center>
+            </div>
+          </footer>
+    </body>
+</html>
